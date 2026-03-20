@@ -1,0 +1,58 @@
+<header class="absolute w-full z-50 text-white">
+  <div class="max-w-6xl mx-auto flex justify-between items-center p-6">
+
+    <!-- Logo -->
+    <img src="/images/desktop/logo.svg" alt="loopstudios" />
+
+    <!-- Menú desktop -->
+    <nav class="hidden md:flex gap-8 text-sm">
+      <a href="#" class="hover:border-b">About</a>
+      <a href="#" class="hover:border-b">Careers</a>
+      <a href="#" class="hover:border-b">Events</a>
+      <a href="#" class="hover:border-b">Products</a>
+      <a href="#" class="hover:border-b">Support</a>
+    </nav>
+
+    <!-- Botón hamburguesa -->
+    <button id="menuBtn" class="md:hidden text-3xl">
+      ☰
+    </button>
+
+  </div>
+</header>
+
+<!-- MENÚ MÓVIL -->
+<div id="mobileMenu" class="fixed inset-0 bg-black text-white hidden flex-col p-6 z-50">
+
+  <!-- Top -->
+  <div class="flex justify-between items-center mb-20">
+    <h1 class="text-2xl font-bold">loopstudios</h1>
+    <button id="closeBtn" class="text-3xl">✕</button>
+  </div>
+
+  <!-- Links -->
+  <nav class="flex flex-col gap-6 text-3xl uppercase font-['Josefin_Sans'] font-light tracking-widest">
+    <a href="#">About</a>
+    <a href="#">Careers</a>
+    <a href="#">Events</a>
+    <a href="#">Products</a>
+    <a href="#">Support</a>
+  </nav>
+
+</div>
+
+<script>
+  const menuBtn = document.getElementById("menuBtn");
+  const mobileMenu = document.getElementById("mobileMenu");
+  const closeBtn = document.getElementById("closeBtn");
+
+  if (menuBtn && mobileMenu && closeBtn) {
+    menuBtn.addEventListener("click", () => {
+      mobileMenu.classList.remove("hidden");
+    });
+
+    closeBtn.addEventListener("click", () => {
+      mobileMenu.classList.add("hidden");
+    });
+  }
+</script>
