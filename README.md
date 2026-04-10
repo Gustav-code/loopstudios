@@ -1,7 +1,3 @@
-# 🏝️ Va, te dejo tu README ya listo, limpio y adaptado a tu proyecto de **Loopstudios**, siguiendo el estilo que quieres pero bien redactado para entrega:
-
----
-
 # Proyecto: Loopstudios Landing Page
 
 Este proyecto consiste en el desarrollo de la landing page de Loopstudios utilizando Astro y Tailwind CSS.
